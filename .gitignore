@@ -1,0 +1,9 @@
+Data/
+oni_x86_env/
+results/
+.DS_Store
+__pycache__/
+*.pyc
+*.oni
+*.npy
+*.npz
