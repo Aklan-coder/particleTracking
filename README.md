@@ -1,5 +1,40 @@
 # Tabletop geometric tracking + resolution-limit learning pipeline
 
+
+
+# Sparse-Depth Object Tracking: Finding the Resolution Limit
+
+**How coarse can a sensor get before you can no longer tell a ball from a box —
+and can learning see below that limit?**
+
+Geometric detection, tracking, and prediction of objects from PrimeSense depth
+video, on a mutable m×n spatial partition simulating a sparse mmWave radar array —
+then a learning experiment probing below the geometric resolution cliff.
+Part of my doctoral research at the University of South Carolina.
+
+![Live tracking](assets/ball_and_box_moving_tracking.gif)
+
+*Two objects tracked through physical contact — 92–99.9% coverage, zero identity
+swaps; shape-aware merge splitting preserves both identities while they touch.*
+
+## Headline findings
+
+![Identification vs. resolution](assets/sweep_curves_mm_6panel.png)
+*The identification cliff: geometry identifies shapes down to h ≤ 25 mm cells
+(~2.4 cells across a 61 mm ball) and dies at 30 mm — while detection survives to
+60 mm. Identification and tracking have different resolution limits.*
+
+![Learning vs. geometry](assets/learning_vs_geometry.png)
+*Below the cliff, trained (deliberately explainable) models hold 0.989–0.999 test
+accuracy at h = 30–40 mm where geometry scores 0.02–0.20 — but a cross-dataset
+exam (UW RGB-D) shows the win rides on scene-specific height, not transferable
+shape structure. Honest result; fixes proposed below.*
+
+---
+
+
+
+
 Purely geometric (phase 1) identification, tracking, and prediction of
 well-formed shapes (sphere, box) from PrimeSense depth video, built around
 a **mutable m x n spatial partition** simulating a future mmWave radar
