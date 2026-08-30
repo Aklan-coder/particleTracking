@@ -1,0 +1,17 @@
+stat,value
+frames_attempted,1027
+frames_succeeded,1027
+frames_failed,0
+failure_pct,0.0
+mean_planes_rmse_mm,0.9554224907153477
+median_planes_rmse_mm,0.9100830390100217
+p90_planes_rmse_mm,1.1366510225295066
+p95_planes_rmse_mm,1.1550847769889039
+max_planes_rmse_mm,1.2210861992618067
+mean_length_mm,133.13379550824385
+std_length_mm,0.28619382929227316
+mean_width_mm,57.26729924637538
+std_width_mm,0.24261772978480248
+mean_height_mm,35.29153655287642
+std_height_mm,0.1251084405595054
+physical_ground_truth,NOT SUPPLIED

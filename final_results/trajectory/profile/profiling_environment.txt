@@ -1,0 +1,9 @@
+OS: Windows 11 (10.0.26200)
+Python: 3.12.10
+CPU (platform string): Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+Logical CPU count: 8
+Physical CPU count / RAM: unavailable (psutil not installed)
+NumPy version: 2.5.2
+BLAS backend: scipy-openblas
+GPU: NOT USED. This model is a plain-numpy CPU computation (np.zeros init, numpy matmul) -- no CUDA/GPU library is imported anywhere in train_model2.py or this profiler.
+config.DT (assumed seconds/frame): 0.03333333333333333  (nominal 30.0 FPS -- NOT a measured camera timestamp, see config.py)

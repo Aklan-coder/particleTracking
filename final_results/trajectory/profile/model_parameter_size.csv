@@ -1,0 +1,5 @@
+k,n_inputs,n_outputs,n_weight_params,n_bias_params,n_total_learned_params,n_mu_values,n_sd_values
+1,9,2,18,2,20,9,9
+3,9,2,18,2,20,9,9
+5,9,2,18,2,20,9,9
+10,9,2,18,2,20,9,9

@@ -1,0 +1,45 @@
+final_destination,original_source,purpose
+final_results/geometry/full_resolution/plane_summary.csv,validation_results/geometry/plane_summary.csv,Real-data plane fit residual summary
+final_results/geometry/full_resolution/ball_summary.csv,validation_results/geometry/ball_summary.csv,Real-data sphere/ball fit residual + physical diameter summary
+final_results/geometry/full_resolution/box_summary.csv,validation_results/geometry/box_summary.csv,Real-data box/cuboid fit residual + dimension summary
+final_results/geometry/full_resolution/geometry_validation_report.md,validation_results/geometry/geometry_validation_report.md,Full-resolution geometry validation narrative report
+final_results/geometry/resolution/geometry_resolution_accuracy.csv,validation_results/geometry_resolution/geometry_resolution_accuracy.csv,"Geometry identification accuracy at h=10,20,30,40"
+final_results/geometry/resolution/geometry_vs_learned_comparison.csv,validation_results/geometry_resolution/geometry_vs_learned_comparison.csv,Contextual (non-sample-matched) geometry vs learned accuracy by h
+final_results/geometry/resolution/geometry_resolution_validation_report.md,validation_results/geometry_resolution/geometry_resolution_validation_report.md,Geometry-resolution investigation narrative report
+final_results/geometry/transition/transition_table.csv,validation_results/geometry_transition/transition_table.csv,"Fine h=20,22.5,25,27.5,30 transition table (ball/box/balanced accuracy)"
+final_results/geometry/transition/transition_by_object.csv,validation_results/geometry_transition/transition_by_object.csv,"Per-object detail across the transition, incl. occupied cells and fit validity"
+final_results/geometry/transition/transition_fit_validity.csv,validation_results/geometry_transition/transition_fit_validity.csv,Sphere/box fit success rate across the transition (explains WHY accuracy falls)
+final_results/geometry/transition/accuracy_by_occupied_cells.csv,validation_results/geometry_transition/accuracy_by_occupied_cells.csv,"Identification accuracy vs occupied-cell count, data-derived bins"
+final_results/geometry/transition/geometry_transition_report.md,validation_results/geometry_transition/geometry_transition_report.md,Transition investigation narrative report
+final_results/classification/unseen_recording/joint_test_metrics.csv,results/joint_test/evaluation/joint_test_metrics.csv,Independent unseen ball_and_box_moving classification metrics by h
+final_results/classification/unseen_recording/original_vs_joint_comparison.csv,results/joint_test/evaluation/original_vs_joint_comparison.csv,Within-recording vs unseen-recording accuracy comparison
+final_results/classification/unseen_recording/joint_test_evaluation_report.md,results/joint_test/evaluation/joint_test_evaluation_report.md,Independent unseen-recording evaluation narrative report
+final_results/classification/full_resolution/phase2_results.csv,results/phase2_results.csv,h=10/20/30/40 learned classifier accuracy (within-recording test set)
+final_results/classification/matched_comparison/matched_comparison_summary.csv,validation_results/geometry_vs_learned_matched/matched_comparison_summary.csv,"Matched (same-frame, same-h) geometry vs learned comparison"
+final_results/classification/matched_comparison/matched_comparison_by_object.csv,validation_results/geometry_vs_learned_matched/matched_comparison_by_object.csv,"Matched comparison, ball vs box separately"
+final_results/classification/matched_comparison/clean_unseen_summary.csv,validation_results/geometry_vs_learned_matched/clean_unseen_summary.csv,CLEAN matched comparison restricted to frames unseen during learned TRAIN
+final_results/classification/matched_comparison/training_overlap_audit.csv,validation_results/geometry_vs_learned_matched/training_overlap_audit.csv,Audit of how many matched samples overlapped learned-model TRAIN
+final_results/classification/matched_comparison/matched_geometry_vs_learned_report.md,validation_results/geometry_vs_learned_matched/matched_geometry_vs_learned_report.md,Matched comparison narrative report
+final_results/trajectory/final_test/final_test_metrics.csv,validation_results/heldout_trajectory_test/final_test_metrics.csv,"Final locked TEST metrics, corrected k=10 model"
+final_results/trajectory/final_test/final_test_baseline_comparison.csv,validation_results/heldout_trajectory_test/final_test_baseline_comparison.csv,Learned vs constant-velocity vs zero-motion on final TEST
+final_results/trajectory/final_test/final_test_by_track.csv,validation_results/heldout_trajectory_test/final_test_by_track.csv,"Final TEST performance, ball track vs box track separately"
+final_results/trajectory/final_test/final_test_by_object.csv,validation_results/heldout_trajectory_test/final_test_by_object.csv,Final TEST object-balanced summary
+final_results/trajectory/final_test/train_validation_test_comparison.csv,validation_results/heldout_trajectory_test/train_validation_test_comparison.csv,Generalization gap: TRAIN -> VALIDATION -> TEST
+final_results/trajectory/final_test/final_heldout_test_report.md,validation_results/heldout_trajectory_test/final_heldout_test_report.md,Final held-out TEST narrative report (states k=10 was locked before TEST was opened)
+final_results/trajectory/validation_selection/heldout_common_validation_comparison.csv,validation_results/heldout_trajectory_training/heldout_common_validation_comparison.csv,VALIDATION comparison across k that led to the k=10 selection
+final_results/trajectory/profile/model_parameter_size.csv,validation_results/trajectory_profile/model_parameter_size.csv,Learned parameter count per k
+final_results/trajectory/profile/model_memory.csv,validation_results/trajectory_profile/model_memory.csv,Raw parameter bytes / inference-state bytes per k
+final_results/trajectory/profile/history_buffer_memory.csv,validation_results/trajectory_profile/history_buffer_memory.csv,Temporal history storage bytes per k
+final_results/trajectory/profile/operation_counts.csv,validation_results/trajectory_profile/operation_counts.csv,Analytical MAC/FLOP counts per k
+final_results/trajectory/profile/latency_benchmarks.csv,validation_results/trajectory_profile/latency_benchmarks.csv,Measured feature/model/total latency per k
+final_results/trajectory/profile/throughput_results.csv,validation_results/trajectory_profile/throughput_results.csv,Predictions/sec and 30-FPS utilization per k
+final_results/trajectory/profile/accuracy_cost_tradeoff.csv,validation_results/trajectory_profile/accuracy_cost_tradeoff.csv,Combined accuracy vs parameter/memory/latency table
+final_results/trajectory/profile/profiling_environment.txt,validation_results/trajectory_profile/profiling_environment.txt,Hardware/software environment the latency numbers were measured on
+final_results/trajectory/profile/trajectory_profile_report.md,validation_results/trajectory_profile/trajectory_profile_report.md,Profiling narrative report
+final_results/figures/learning_vs_geometry.png,results/learning_vs_geometry.png,Headline figure: learned model survives the geometric resolution cliff
+final_results/figures/geometry_transition_accuracy.png,validation_results/geometry_transition/plots/accuracy_vs_h.png,Fine 20-30mm transition accuracy curve
+final_results/figures/geometry_vs_learned_accuracy.png,validation_results/geometry_vs_learned_matched/plots/accuracy_by_h.png,Matched geometry vs learned accuracy by h
+final_results/figures/final_test_error_histogram.png,validation_results/heldout_trajectory_test/plots/error_histogram.png,"Final TEST error distribution, learned vs baselines"
+final_results/figures/final_test_ball_track.png,validation_results/heldout_trajectory_test/plots/trajectory_ball_track.png,"Final TEST predicted-vs-true path, held-out ball track"
+final_results/figures/final_test_box_track.png,validation_results/heldout_trajectory_test/plots/trajectory_box_track.png,"Final TEST predicted-vs-true path, held-out box track"
+final_results/figures/latency_vs_k.png,validation_results/trajectory_profile/plots/latency_vs_k.png,Trajectory-prediction latency vs k

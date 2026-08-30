@@ -1,0 +1,9 @@
+h_mm,variant,test_acc,acc_static,acc_moving,acc_ball,acc_box,top_features
+10,pattern,0.994,1.000,0.992,0.989,1.000,"ring3_height (+0.86), ring2_height (+0.85), max_height (-0.73)"
+10,full,0.996,1.000,0.995,0.993,1.000,"ring3_height (+0.65), patch_occupancy (+0.65), ring2_height (+0.65)"
+20,pattern,0.993,1.000,0.990,0.988,1.000,"max_height (-1.27), mean_height (-1.11), mean_variance (-1.05)"
+20,full,0.996,1.000,0.994,0.992,1.000,"occupied_cells (+0.93), patch_occupancy (+0.93), max_height (-0.82)"
+30,pattern,0.992,1.000,0.988,0.985,1.000,"ring1_height (+1.23), max_height (-1.02), mean_height (-0.85)"
+30,full,0.995,1.000,0.993,0.990,1.000,"ring1_height (+0.87), occupied_cells (+0.78), patch_occupancy (+0.78)"
+40,pattern,0.994,1.000,0.992,0.989,1.000,"ring1_height (+1.51), max_height (-1.02), mean_variance (-0.82)"
+40,full,0.996,1.000,0.995,0.993,1.000,"ring1_height (+1.09), max_height (-0.81), occupied_cells (+0.75)"

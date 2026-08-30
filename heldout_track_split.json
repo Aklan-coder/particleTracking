@@ -1,0 +1,16 @@
+{
+  "train": [
+    ["ball_and_box_moving", 2],
+    ["ball_moving", 1],
+    ["ball_moving", 2],
+    ["ball_and_box_moving", 1]
+  ],
+  "validation": [
+    ["ball_moving", 3],
+    ["ball_and_box_moving", 4]
+  ],
+  "test": [
+    ["ball_moving", 4],
+    ["box_moving", 1]
+  ]
+}

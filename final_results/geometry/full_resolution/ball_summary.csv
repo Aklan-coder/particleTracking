@@ -1,0 +1,15 @@
+stat,value
+frames_attempted,1117
+frames_succeeded,1117
+frames_failed,0
+failure_pct,0.0
+mean_abs_resid_mm,0.6923888477960671
+median_resid_mm,0.5584328881629652
+rmse_mm,0.8928026810291959
+std_mm,0.5636437799714947
+p90_mm,1.4415039203412094
+p95_mm,1.798752595751199
+max_mm,4.0354314026690545
+mean_estimated_diameter_mm,60.663964513043794
+std_estimated_diameter_mm,0.6400952375112321
+physical_ground_truth,NOT SUPPLIED

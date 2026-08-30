@@ -1,0 +1,13 @@
+group,h_mm,n,geometry_correct,geometry_incorrect,geometry_accuracy,learned_correct,learned_incorrect,learned_accuracy,both_correct,geometry_only_correct,learned_only_correct,both_wrong,n_geometry_failures,n_learned_correct_on_failures,learned_recovery_rate
+overall,10.0,32,30,2,0.9375,32,0,1.0,30,0,2,0,2,2,1.0
+ball,10.0,16,,,1.0,,,1.0,16,0,0,0,,,nan
+box,10.0,16,,,0.875,,,1.0,14,0,2,0,,,1.0
+overall,20.0,32,32,0,1.0,32,0,1.0,32,0,0,0,0,0,nan
+ball,20.0,16,,,1.0,,,1.0,16,0,0,0,,,nan
+box,20.0,16,,,1.0,,,1.0,16,0,0,0,,,nan
+overall,30.0,32,0,32,0.0,32,0,1.0,0,0,32,0,32,32,1.0
+ball,30.0,16,,,0.0,,,1.0,0,0,16,0,,,1.0
+box,30.0,16,,,0.0,,,1.0,0,0,16,0,,,1.0
+overall,40.0,32,0,32,0.0,32,0,1.0,0,0,32,0,32,32,1.0
+ball,40.0,16,,,0.0,,,1.0,0,0,16,0,,,1.0
+box,40.0,16,,,0.0,,,1.0,0,0,16,0,,,1.0

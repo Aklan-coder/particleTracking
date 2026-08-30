@@ -1,0 +1,5 @@
+k,feature_construction_ops,normalization_ops,model_MACs,model_matvec_flops,bias_add_ops,reconstruction_ops,total_flops_per_prediction
+1,12,18,18,36,2,2,70
+3,16,18,18,36,2,2,74
+5,20,18,18,36,2,2,78
+10,30,18,18,36,2,2,88
